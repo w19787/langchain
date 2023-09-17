@@ -87,6 +87,7 @@ from langchain.llms.vllm import VLLM, VLLMOpenAI
 from langchain.llms.writer import Writer
 from langchain.llms.xinference import Xinference
 from langchain.llms.ernie import Ernie
+from langchain.llms.chatglm2 import Chatglm2
 
 __all__ = [
     "AI21",
@@ -161,7 +162,8 @@ __all__ = [
     "Writer",
     "OctoAIEndpoint",
     "Xinference",
-    "Ernie"
+    "Ernie",
+    "Chatglm2"
 ]
 
 type_to_cls_dict: Dict[str, Type[BaseLLM]] = {
@@ -231,4 +233,5 @@ type_to_cls_dict: Dict[str, Type[BaseLLM]] = {
     "writer": Writer,
     "xinference": Xinference,
     "ernie":Ernie,
+    "chatglm2":Chatglm2,
 }
